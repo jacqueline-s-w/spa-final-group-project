@@ -1,0 +1,87 @@
+@import "/src/scss/fonts";
+@import "/src/scss/sizes";
+@import "/src/scss/colors";
+
+iframe {
+    margin-bottom: 20px;
+}
+
+.center_text {
+    text-align: center;
+}
+
+form {
+    input {
+        height: 32px;
+        width: 90%;
+        padding: 0px 25px;
+        border-radius: 10px;
+        border: 1px solid $dblue;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.212);
+        font: {
+            family: MontserratRegular, sans-serif;
+            size: 20px;
+        }
+        transition: 0.2s;
+        &:hover {
+            background-color: $grey;
+        }
+        &:focus {
+            background-color: $grey;
+            outline: none;
+        }
+        &::placeholder {
+            font: {
+                family: MontserratRegular, sans-serif;
+            }
+        }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px solid $dblue;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.212);
+        padding: 2rem;
+        font: {
+            family: MontserratRegular, sans-serif;
+            size: $m;
+        }
+        &:hover {
+            background-color: $grey;
+        }
+        &:focus {
+            background-color: $grey;
+            outline: none;
+        }
+        &::placeholder {
+            font: {
+                family: MontserratRegular, sans-serif;
+            }
+        }
+    }
+}
+
+#submit {
+    height: 40px;
+    width: 140px;
+    border-radius: 25px;
+    border: none;
+    color: $white;
+    font-size: 22px;
+    background: $dblue;
+    transition: 0.2s;
+    margin-top: 15px;
+    &:hover {
+        width: 200px;
+    }
+}
+
+.card_section {
+    @media (min-width: 992px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

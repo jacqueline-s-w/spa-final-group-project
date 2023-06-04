@@ -1,0 +1,84 @@
+@import "/src/scss/fonts";
+@import "/src/scss/sizes";
+@import "/src/scss/colors";
+
+.main-container {
+    .welcome-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: {
+            wrap: wrap;
+        }
+        @media (min-width: 992px) {
+            height: 32rem;
+            justify-content: initial;
+            align-items: initial;
+
+            flex: {
+                direction: row;
+            }
+            padding: {
+                left: 2rem;
+            }
+            margin: {
+                bottom: 8rem;
+            }
+            .paragraph {
+                text-align: left;
+            }
+        }
+        .sub-head {
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+        }
+
+        .text_container_top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            @media (min-width: 992px) {
+                flex-flow: row;
+
+                .text_container {
+                    width: 80%;
+                }
+            }
+            .welcome-circle-picture {
+                height: 150px;
+                width: 150px;
+                margin: {
+                    top: 3.2rem;
+                }
+                padding: {
+                    left: 30px;
+                }
+                @media (min-width: 992px) {
+                    padding: {
+                        left: 60px;
+                    }
+                    width: 30rem;
+                    height: 30rem;
+                }
+
+                .welcome-image {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .article_cards_section {
+        align-items: flex-start;
+        justify-content: center;
+        @media (min-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: {
+                top: 2.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "/src/scss/fonts";
+@import "/src/scss/sizes";
+@import "/src/scss/colors";
+
+p {
+    text-align: center;
+}
+.warning {
+    background-color: #ffc0cba0;
+    margin: 2.5rem 0;
+    padding: $xxl;
+    border-radius: 20px;
+    h3,
+    p {
+        color: #ce1338;
+        text-align: center;
+    }
+}
